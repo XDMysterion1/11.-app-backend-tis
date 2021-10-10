@@ -2,6 +2,10 @@
 
 ### $ `composer install`
 
+# copiar para la conexion de la base de datos
+
+### $ cp .env.example .env
+
 # Migrar la base de datos
 
 ### $ `php artisan migrate`
