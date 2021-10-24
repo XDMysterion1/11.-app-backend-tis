@@ -14,7 +14,7 @@ class CreateUsersTable extends Migration
     public function up()
     {
         Schema::create('users', function (Blueprint $table) {
-            $table->id();
+            $table->string('id', 30)->primary();
             $table->string('codigoSIS');
             $table->string('nombre');
             $table->string('apellido');
@@ -28,8 +28,8 @@ class CreateUsersTable extends Migration
             $table->string('sexo');
             $table->timestamps();
 
-            $table->unsignedInteger('rol'); 
-            $table->foreign('rol')->references('id')->on('rols');
+            $table->string('rol'); 
+            $table->foreign('rol')->references('id')->on('rols')->nullable()->onDelete('SET NULL');
         });
         DB::table('users')->
         insert(array(
@@ -43,7 +43,7 @@ class CreateUsersTable extends Migration
         'telefono' =>'75458565',
         'gestion'  =>'I-2021',
         'sexo'     =>'Masculino',
-        'rol'      =>'1'
+        'rol'      =>'1as21s'
         ));
         DB::table('users')->
         insert(array(
@@ -57,7 +57,7 @@ class CreateUsersTable extends Migration
         'telefono' =>'75458458',
         'gestion'  =>'I-2021',
         'sexo'     =>'Masculino',
-        'rol'      =>'2'
+        'rol'      =>'21sd3d'
         ));
     }
 

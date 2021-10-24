@@ -9,6 +9,8 @@ class Rol extends Model
 {
     use HasFactory;
     public $timestamps = false;
+    public $incrementing = false;
+    protected $keyType = 'string';
     protected $fillable = ['id','rol'];
     protected $hidden = ['created_at','updated_at'];
 }
