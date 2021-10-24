@@ -18,10 +18,10 @@ class CreateRolsTable extends Migration
             $table->string('rol');
             $table->timestamps();
         });
-        DB::table('rols')->insert(array('id'=>'1as21s','rol'=>'Administrador'));
-        DB::table('rols')->insert(array('id'=>'21sd3d','rol'=>'Docente'));
-        DB::table('rols')->insert(array('id'=>'3dsd33','rol'=>'Desarrollador'));
-        DB::table('rols')->insert(array('id'=>'4d3das','rol'=>'Control de Calidad'));
+        DB::table('rols')->insert(array('id'=>'rol-1as21sdfg','rol'=>'Administrador'));
+        DB::table('rols')->insert(array('id'=>'rol-21sd3dgrf','rol'=>'Docente'));
+        DB::table('rols')->insert(array('id'=>'rol-3dsd33wff','rol'=>'Desarrollador'));
+        DB::table('rols')->insert(array('id'=>'rol-4d3dasgfd','rol'=>'Control de Calidad'));
     }
 
     /**
