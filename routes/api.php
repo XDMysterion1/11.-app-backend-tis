@@ -34,6 +34,7 @@ Route::get('getUserId/{id}'       ,'\App\Http\Controllers\UserController@getUser
 Route::post('createUser'          ,'\App\Http\Controllers\UserController@createUser');
 Route::put('updateUser/{id}'      ,'\App\Http\Controllers\UserController@updateUser');
 Route::delete('deleteUserId/{id}' ,'\App\Http\Controllers\UserController@deleteUserId');
+Route::post('login'               ,'\App\Http\Controllers\UserController@login');
 
 /**
  * Api de Grupo-Empresa

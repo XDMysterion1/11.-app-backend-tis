@@ -40,4 +40,19 @@ class UserController extends Controller
         return response()->json(['Mensaje'=>'Usuario  Eliminado'],200);
     }
 
+    public function login(Request $request)
+    {
+        $email     = $request->input('email');
+        $password  = $request->input('password');
+   
+        $user = User::where('email', '=', $email)->first();
+
+        if ((strtoupper($email) == strtoupper($user->email)) && ($password == $user->password)) {
+           return response($user,200);
+        }else{
+            return response()->json(['Error'=>'Correo o contraseña incorrectas'],404);
+        }
+    }
+
+
 }
