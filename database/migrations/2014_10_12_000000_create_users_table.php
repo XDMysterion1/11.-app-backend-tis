@@ -28,21 +28,75 @@ class CreateUsersTable extends Migration
         });
         DB::table('users')->
         insert(array(
+        'id'       =>'user-kvhf2g4y',
+        'nombre'   =>'Ariel',
+        'apellido' =>'Paricagua',
+        'email'    =>'ariel.pv@gmail.com',
+        'password' =>'123456',
+        'rol'      =>'rol-3dsd33wff'
+        ));
+        DB::table('users')->
+        insert(array(
+        'id'       =>'user-kvigul61',
+        'nombre'   =>'Antonio',
+        'apellido' =>'Roman Marca',
+        'email'    =>'antonio.a@gmail.com',
+        'password' =>'Antonio123',
+        'rol'      =>'rol-3dsd33wff'
+        ));
+        DB::table('users')->
+        insert(array(
         'id'       =>'user-ss12qswe',
         'nombre'   =>'Cesar',
         'apellido' =>'Galindo',
         'email'    =>'cesar.g@gmail.com',
-        'password' =>'123456',
-        'rol'      =>'rol-1as21sdfg'
+        'password' =>'1234123',
+        'rol'      =>'rol-kv5cngnu'
         ));
         DB::table('users')->
         insert(array(
-        'id'       =>'user-sad15aew',
-        'nombre'   =>'Ariel',
-        'apellido' =>'Paricagua',
-        'email'    =>'ariel.p@gmail.com',
+        'id'       =>'user-kvor9jr5',
+        'nombre'   =>'Denisse',
+        'apellido' =>'Vargas',
+        'email'    =>'denisv@gmail.com',
+        'password' =>'qwert123Q',
+        'rol'      =>'rol-kvjva7f6'
+        ));
+        DB::table('users')->
+        insert(array(
+        'id'       =>'user-kvok0fcb',
+        'nombre'   =>'Alex',
+        'apellido' =>'Calcina',
+        'email'    =>'alex@gmail.com',
+        'password' =>'ALEX2021',
+        'rol'      =>'rol-kvjva7f6'
+        ));
+        DB::table('users')->
+        insert(array(
+        'id'       =>'user-kvnubbyu',
+        'nombre'   =>'Wilder',
+        'apellido' =>'Canaviri',
+        'email'    =>'wilder.c@gmail.com',
         'password' =>'123456',
-        'rol'      =>'rol-21sd3dgrf'
+        'rol'      =>'rol-kvjva7f6'
+        ));
+        DB::table('users')->
+        insert(array(
+        'id'       =>'user-kvq1x9hx',
+        'nombre'   =>'Martha',
+        'apellido' =>'Lagos',
+        'email'    =>'martha.l@gmail.com',
+        'password' =>'123456',
+        'rol'      =>'rol-kvjva7f6'
+        ));
+        DB::table('users')->
+        insert(array(
+        'id'       =>'user-kvq1z5do',
+        'nombre'   =>'Luz',
+        'apellido' =>'Torres',
+        'email'    =>'luz.t@gmail.com',
+        'password' =>'123456',
+        'rol'      =>'rol-kvjva7f6'
         ));
     }
 

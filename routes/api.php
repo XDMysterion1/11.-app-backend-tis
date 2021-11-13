@@ -37,7 +37,29 @@ Route::delete('deleteUserId/{id}' ,'\App\Http\Controllers\UserController@deleteU
 Route::post('login'               ,'\App\Http\Controllers\UserController@login');
 
 /**
- * Api de Grupo-Empresa
+ * Api de Empresa
  */
-Route::get('getGrupoEmpresa','\App\Http\Controllers\GrupoEmpresaController@getGrupoEmpresa');
+Route::get('getEmpresas'             ,'\App\Http\Controllers\EmpresaController@getEmpresa');
+Route::get('getEmpresaId/{id}'       ,'\App\Http\Controllers\EmpresaController@getEmpresaId');
+Route::post('createEmpresa'          ,'\App\Http\Controllers\EmpresaController@createEmpresa');
+Route::put('updateEmpresa/{id}'      ,'\App\Http\Controllers\EmpresaController@updateEmpresa');
+Route::delete('deleteEmpresaId/{id}' ,'\App\Http\Controllers\EmpresaController@deleteEmpresaId');
+
+/**
+ * Api de Convocatoria
+ */
+Route::get('getConvocatorias'             ,'\App\Http\Controllers\ConvocatoriaController@getConvocatoria');
+Route::get('getConvocatoriaId/{id}'       ,'\App\Http\Controllers\ConvocatoriaController@getConvocatoriaId');
+Route::post('createConvocatoria'          ,'\App\Http\Controllers\ConvocatoriaController@createConvocatoria');
+Route::put('updateConvocatoria/{id}'      ,'\App\Http\Controllers\ConvocatoriaController@updateConvocatoria');
+Route::delete('deleteConvocatoriaId/{id}' ,'\App\Http\Controllers\ConvocatoriaController@deleteConvocatoriaId');
+
+/**
+ * Api de Pliego
+ */
+Route::get('getPliegos'             ,'\App\Http\Controllers\PliegoController@getPliego');
+Route::get('getPliegoId/{id}'       ,'\App\Http\Controllers\PliegoController@getPliegoId');
+Route::post('createPliego'          ,'\App\Http\Controllers\PliegoController@createPliego');
+Route::put('updatePliego/{id}'      ,'\App\Http\Controllers\PliegoController@updatePliego');
+Route::delete('deletePliegoId/{id}' ,'\App\Http\Controllers\PliegoController@deletePliegoId');
 
