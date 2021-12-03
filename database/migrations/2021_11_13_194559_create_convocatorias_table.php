@@ -32,7 +32,7 @@ class CreateConvocatoriasTable extends Migration
         'codigo'   =>'PETIS-1515',
         'semestre' =>'II-2021',
         'link'     =>'https://docs.google.com/document/d/1QKxn8wD9fUICAttp7Sc378rM4VSqzIWUltd0PSToFBw/edit',
-        'estado'   =>'0',
+        'estado'   =>'No publicado',
         'user'     =>'user-kvhf2g4y'
         ));
 
@@ -43,7 +43,7 @@ class CreateConvocatoriasTable extends Migration
         'codigo'   =>'CPTIS-0509-2021',
         'semestre' =>'II-2021',
         'link'     =>'https://drive.google.com/file/d/1SYMYNX-7WNjMwBNHIW_KRMqJks_Z1xcC/view?usp=sharing',
-        'estado'   =>'1',
+        'estado'   =>'Publicar',
         'user'     =>'user-kvhf2g4y'
         ));
 
@@ -54,7 +54,7 @@ class CreateConvocatoriasTable extends Migration
         'codigo'   =>'CPTIS-0609-2021',
         'semestre' =>'II-2021',
         'link'     =>'https://drive.google.com/file/d/1SYMYNX-7WNjMwBNHIW_KRMqJks_Z1xcC/view?usp=sharing',
-        'estado'   =>'1',
+        'estado'   =>'Publicar',
         'user'     =>'user-kvhf2g4y'
         ));
     }

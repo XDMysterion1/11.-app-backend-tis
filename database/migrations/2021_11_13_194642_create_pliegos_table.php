@@ -32,7 +32,7 @@ class CreatePliegosTable extends Migration
         'codigo'   =>'pliego-062021',
         'semestre' =>'II-2021',
         'link'     =>'https://docs.google.com/document/d/1QKxn8wD9fUICAttp7Sc378rM4VSqzIWUltd0PSToFBw/edit?usp=sharing',
-        'estado'   =>'0',
+        'estado'   =>'No publicados',
         'user'     =>'user-kvigul61'
         ));
 
@@ -43,7 +43,7 @@ class CreatePliegosTable extends Migration
         'codigo'   =>'PETIS-1309-2021',
         'semestre' =>'II-2021',
         'link'     =>'https://drive.google.com/file/d/1cnVhsoZ9gAYX9INy0FSwN7g4oFyjIzYY/view?usp=sharing',
-        'estado'   =>'1',
+        'estado'   =>'Publicar',
         'user'     =>'user-kvhf2g4y'
         ));
 
@@ -54,7 +54,7 @@ class CreatePliegosTable extends Migration
         'codigo'   =>'PETIS-1409-2021',
         'semestre' =>'II-2021',
         'link'     =>'https://drive.google.com/file/d/1cnVhsoZ9gAYX9INy0FSwN7g4oFyjIzYY/view?usp=sharing',
-        'estado'   =>'1',
+        'estado'   =>'Publicar',
         'user'     =>'user-kvhf2g4y'
         ));
     }
