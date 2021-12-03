@@ -43,4 +43,9 @@ class ConvocatoriaController extends Controller
         return response()->json(['Mensaje'=>'Convocatoria  Eliminado'],200);
     }
 
+    public function getConvocatoriasPublicados(){
+        $convocatoria = Convocatoria::select("*")->where("estado", "=","1")->get();
+        return response()->json($convocatoria,200);
+    }
+
 }

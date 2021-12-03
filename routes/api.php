@@ -53,6 +53,7 @@ Route::get('getConvocatoriaId/{id}'       ,'\App\Http\Controllers\ConvocatoriaCo
 Route::post('createConvocatoria'          ,'\App\Http\Controllers\ConvocatoriaController@createConvocatoria');
 Route::put('updateConvocatoria/{id}'      ,'\App\Http\Controllers\ConvocatoriaController@updateConvocatoria');
 Route::delete('deleteConvocatoriaId/{id}' ,'\App\Http\Controllers\ConvocatoriaController@deleteConvocatoriaId');
+Route::get('getConvocatoriasPublicados'   ,'\App\Http\Controllers\ConvocatoriaController@getConvocatoriasPublicados');
 
 /**
  * Api de Pliego
@@ -62,4 +63,5 @@ Route::get('getPliegoId/{id}'       ,'\App\Http\Controllers\PliegoController@get
 Route::post('createPliego'          ,'\App\Http\Controllers\PliegoController@createPliego');
 Route::put('updatePliego/{id}'      ,'\App\Http\Controllers\PliegoController@updatePliego');
 Route::delete('deletePliegoId/{id}' ,'\App\Http\Controllers\PliegoController@deletePliegoId');
+Route::get('getPliegosPublicados'   ,'\App\Http\Controllers\PliegoController@getPliegosPublicados');
 

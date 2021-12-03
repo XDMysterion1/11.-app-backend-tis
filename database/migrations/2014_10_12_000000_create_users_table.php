@@ -98,6 +98,15 @@ class CreateUsersTable extends Migration
         'password' =>'123456',
         'rol'      =>'rol-kvjva7f6'
         ));
+        DB::table('users')->
+        insert(array(
+        'id'       =>'user-kwks5frw',
+        'nombre'   =>'Anita',
+        'apellido' =>'Lopez',
+        'email'    =>'anita@gmail.com',
+        'password' =>'123456',
+        'rol'      =>'rol-kvjva7f6'
+        ));
     }
 
     /**
