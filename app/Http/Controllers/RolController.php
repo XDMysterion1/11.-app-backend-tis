@@ -39,4 +39,8 @@ class RolController extends Controller
         $rol->delete();
         return response()->json(['Mensaje'=>'Rol Eliminado'],200);
     }
+    public function getRolesActivas(){
+        $rol = Rol::select("*")->where("estado", "=","Activo")->get();
+        return response()->json($rol,200);
+    }
 }

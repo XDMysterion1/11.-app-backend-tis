@@ -20,6 +20,7 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->string('estado');
             $table->rememberToken();
             $table->timestamps();
 
@@ -33,6 +34,7 @@ class CreateUsersTable extends Migration
         'apellido' =>'Paricagua',
         'email'    =>'ariel.pv@gmail.com',
         'password' =>'123456',
+        'estado'   =>'Activo',
         'rol'      =>'rol-3dsd33wff'
         ));
         DB::table('users')->
@@ -42,6 +44,7 @@ class CreateUsersTable extends Migration
         'apellido' =>'Roman Marca',
         'email'    =>'antonio.a@gmail.com',
         'password' =>'Antonio123',
+        'estado'   =>'Activo',
         'rol'      =>'rol-3dsd33wff'
         ));
         DB::table('users')->
@@ -51,6 +54,7 @@ class CreateUsersTable extends Migration
         'apellido' =>'Galindo',
         'email'    =>'cesar.g@gmail.com',
         'password' =>'1234123',
+        'estado'   =>'Activo',
         'rol'      =>'rol-kv5cngnu'
         ));
         DB::table('users')->
@@ -60,6 +64,7 @@ class CreateUsersTable extends Migration
         'apellido' =>'Vargas',
         'email'    =>'denisv@gmail.com',
         'password' =>'qwert123Q',
+        'estado'   =>'Activo',
         'rol'      =>'rol-kvjva7f6'
         ));
         DB::table('users')->
@@ -69,6 +74,7 @@ class CreateUsersTable extends Migration
         'apellido' =>'Calcina',
         'email'    =>'alex@gmail.com',
         'password' =>'ALEX2021',
+        'estado'   =>'Activo',
         'rol'      =>'rol-kvjva7f6'
         ));
         DB::table('users')->
@@ -78,6 +84,7 @@ class CreateUsersTable extends Migration
         'apellido' =>'Canaviri',
         'email'    =>'wilder.c@gmail.com',
         'password' =>'123456',
+        'estado'   =>'Activo',
         'rol'      =>'rol-kvjva7f6'
         ));
         DB::table('users')->
@@ -87,6 +94,7 @@ class CreateUsersTable extends Migration
         'apellido' =>'Lagos',
         'email'    =>'martha.l@gmail.com',
         'password' =>'123456',
+        'estado'   =>'Activo',
         'rol'      =>'rol-kvjva7f6'
         ));
         DB::table('users')->
@@ -96,6 +104,7 @@ class CreateUsersTable extends Migration
         'apellido' =>'Torres',
         'email'    =>'luz.t@gmail.com',
         'password' =>'123456',
+        'estado'   =>'Activo',
         'rol'      =>'rol-kvjva7f6'
         ));
         DB::table('users')->
@@ -105,7 +114,28 @@ class CreateUsersTable extends Migration
         'apellido' =>'Lopez',
         'email'    =>'anita@gmail.com',
         'password' =>'123456',
+        'estado'   =>'Activo',
         'rol'      =>'rol-kvjva7f6'
+        ));
+        DB::table('users')->
+        insert(array(
+        'id'       =>'user-kwu58hgs',
+        'nombre'   =>'Ana Belen',
+        'apellido' =>'del Castillo Coca',
+        'email'    =>'ana@gmail.com',
+        'password' =>'ana123',
+        'estado'   =>'Activo',
+        'rol'      =>'rol-kvjva7f6'
+        ));
+        DB::table('users')->
+        insert(array(
+        'id'       =>'user-kwwn9wse',
+        'nombre'   =>'Flabio',
+        'apellido' =>'Vargas',
+        'email'    =>'flabio@gmail.com',
+        'password' =>'123abc',
+        'estado'   =>'Activo',
+        'rol'      =>'rol-1as21sdfg'
         ));
     }
 

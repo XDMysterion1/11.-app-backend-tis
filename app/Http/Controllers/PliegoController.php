@@ -39,7 +39,12 @@ class PliegoController extends Controller
         return response()->json(['Mensaje'=>'Pliego  Eliminado'],200);
     }
     public function getPliegosPublicados(){
-        $pliego = Pliego::select("*")->where("estado", "=","Publicar")->get();
+        $pliego = Pliego::select("*")
+                            ->where([
+                                ["publicado", "=","Publicar"],
+                                ["estado"   , "=","Activo"]
+                            ])->
+                            get();
         return response()->json($pliego,200);
     }
 

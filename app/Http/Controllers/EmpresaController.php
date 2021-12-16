@@ -39,5 +39,9 @@ class EmpresaController extends Controller
         $empresa->delete();
         return response()->json(['Mensaje'=>'Empresa  Eliminado'],200);
     }
+    public function getEmpresasActivas(){
+        $empresa = Empresa::select("*")->where("estado", "=","Activo")->get();
+        return response()->json($empresa,200);
+    }
 
 }

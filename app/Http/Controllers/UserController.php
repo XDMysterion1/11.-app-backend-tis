@@ -53,6 +53,10 @@ class UserController extends Controller
             return response()->json(['Error'=>'Correo o contraseña incorrectas'],404);
         }
     }
+    public function getUsersActivas(){
+        $user = User::select("*")->where("estado", "=","Activo")->get();
+        return response()->json($user,200);
+    }
 
 
 }

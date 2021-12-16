@@ -44,7 +44,12 @@ class ConvocatoriaController extends Controller
     }
 
     public function getConvocatoriasPublicados(){
-        $convocatoria = Convocatoria::select("*")->where("estado", "=","Publicar")->get();
+        $convocatoria = Convocatoria::select("*")
+                        ->where([
+                            ["publicado", "=","Publicar"],
+                            ["estado"   , "=","Activo"]
+                        ])->
+                        get();
         return response()->json($convocatoria,200);
     }
 

@@ -23,6 +23,7 @@ class CreateEmpresasTable extends Migration
             $table->string('email')->unique();
             $table->string('password');
             $table->string('informacion',255);
+            $table->string('estado');
             $table->timestamps();
 
             $table->string('user'); 
@@ -39,6 +40,7 @@ class CreateEmpresasTable extends Migration
         'email'         =>'magictech1@gmail.com',
         'password'      =>'123456',
         'informacion'   =>'Especialisados en software',
+        'estado'        =>'Activo',
         'user'          =>'user-ss12qswe'
         ));
         DB::table('empresas')->
@@ -52,7 +54,50 @@ class CreateEmpresasTable extends Migration
         'email'         =>'liontech@gmail.com',
         'password'      =>'liontech12345',
         'informacion'   =>'Es una empresa encargada del desarrollo del software',
+        'estado'        =>'Activo',
         'user'          =>'user-kvhf2g4y'
+        ));
+        DB::table('empresas')->
+        insert(array(
+        'id'            =>'empresa-kwu4ehp5',
+        'nombre'        =>'Alfa Soft',
+        'nombreCorto'   =>'Alfa',
+        'nombreLargo'   =>'Alfa Software',
+        'tipoSociedad'  =>'S.R.L.',
+        'direccion'     =>'Av Los pinos del Alto',
+        'email'         =>'alfa.soft@gmail.com',
+        'password'      =>'123456',
+        'informacion'   =>'Empresa de desarrollo de software',
+        'estado'        =>'Activo',
+        'user'          =>'user-kvigul61'
+        ));
+        DB::table('empresas')->
+        insert(array(
+        'id'            =>'empresa-kwu2nhve',
+        'nombre'        =>'Pablo',
+        'nombreCorto'   =>'SQ',
+        'nombreLargo'   =>'Software Of Quality',
+        'tipoSociedad'  =>'S.R.L.',
+        'direccion'     =>'Av. America entre Quijarro y Pantaleon Dalence 123',
+        'email'         =>'SQ@gmail.com.com',
+        'password'      =>'123123',
+        'informacion'   =>'Ninguna',
+        'estado'        =>'Activo',
+        'user'          =>'user-kvq1z5do'
+        ));
+        DB::table('empresas')->
+        insert(array(
+        'id'            =>'empresa-kwu3hc19',
+        'nombre'        =>'Lulu',
+        'nombreCorto'   =>'rvgc',
+        'nombreLargo'   =>'RVGC Soft',
+        'tipoSociedad'  =>'S.R.L.',
+        'direccion'     =>'Calle Ignacio de las Casa 123',
+        'email'         =>'rvgc@gmail.com',
+        'password'      =>'...123',
+        'informacion'   =>'empresa de software',
+        'estado'        =>'Activo',
+        'user'          =>'user-kvq1z5do'
         ));
     }
 

@@ -12,6 +12,7 @@ class Empresa extends Model
     public $incrementing = false;
     protected $keyType = 'string';
     protected $fillable = ['id','nombre','nombreCorto',
-    'nombreLargo','tipoSociedad','direccion','email','password','informacion','user'];
+    'nombreLargo','tipoSociedad','direccion','email','password','informacion'
+    ,'estado','user'];
     protected $hidden = ['created_at','updated_at'];
 }
