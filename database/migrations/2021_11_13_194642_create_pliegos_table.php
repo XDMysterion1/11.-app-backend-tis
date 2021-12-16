@@ -71,7 +71,7 @@ class CreatePliegosTable extends Migration
         'link'     =>'https://drive.google.com/drive/u/0/folders/120iQOwmWHY6ClFl8dG8xcZeQ1h7Kar_c',
         'publicado'=>'Publicar',
         'estado'   =>'Activo',
-        'user'     =>'user-kwu3vnrl'
+        'user'     =>'user-kvhf2g4y'
         ));
     }
 
