@@ -281,6 +281,56 @@ class CreateItemsTable extends Migration
         'rol'          =>'rol-kvjva7f6'
         ));
 
+        //-------- Docente ------------------------
+
+        DB::table('items')->
+        insert(array(
+        'id'     =>'items-u7hf2xsw',
+        'Iconolabel'   =>'Home',
+        'IconoIcono'   =>'pi pi-fw pi-home',
+        'ItemLabel'    =>'Tablero',
+        'ItemIcono'    =>'pi pi-fw pi-home',
+        'ItemTo'       =>'/',
+        'estado'       =>'Activo',
+        'rol'          =>'rol-21sd3dgrf'
+        ));
+
+        DB::table('items')->
+        insert(array(
+        'id'           =>'items-v7dqwed4',
+        'Iconolabel'   =>'Lista de empresas',
+        'IconoIcono'   =>'i pi-fw pi-briefcase',
+        'ItemLabel'    =>'Empresas',
+        'ItemIcono'    =>'pi pi-fw pi-briefcase',
+        'ItemTo'       =>'/ListEmpresa',
+        'estado'       =>'Activo',
+        'rol'          =>'rol-21sd3dgrf'
+        ));
+
+        DB::table('items')->
+        insert(array(
+        'id'           =>'items-l0fr3k5c',
+        'Iconolabel'   =>'Lista de Publicaciones Convocatorias',
+        'IconoIcono'   =>'pi pi-fw pi-sitemap',
+        'ItemLabel'    =>'Convocatoria',
+        'ItemIcono'    =>'pi pi-fw pi-id-card',
+        'ItemTo'       =>'/ListConvocatoria',
+        'estado'       =>'Activo',
+        'rol'          =>'rol-21sd3dgrf'
+        ));
+
+        DB::table('items')->
+        insert(array(
+        'id'           =>'items-b5wq5gh6',
+        'Iconolabel'   =>'Lista de Publicaciones Pliego de Especificaciones',
+        'IconoIcono'   =>'pi pi-fw pi-sitemap',
+        'ItemLabel'    =>'Pliego de Especificaciones',
+        'ItemIcono'    =>'pi pi-fw pi-check-square',
+        'ItemTo'       =>'/ListPliego',
+        'estado'       =>'Activo',
+        'rol'          =>'rol-21sd3dgrf'
+        ));
+
     }
 
     /**
