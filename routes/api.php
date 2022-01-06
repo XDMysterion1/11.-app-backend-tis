@@ -119,3 +119,24 @@ Route::put('updateEntregaB/{id}'      ,'\App\Http\Controllers\EntregaBController
 Route::delete('deleteEntregaBId/{id}' ,'\App\Http\Controllers\EntregaBController@deleteEntregaBId');
 Route::get('getEntregaBsActivas'      ,'\App\Http\Controllers\EntregaBController@getEntregaBsActivas');
 
+/**
+ * Api de Icono
+ */
+Route::get('getIconos'             ,'\App\Http\Controllers\IconoController@getIcono');
+Route::get('getIconoId/{id}'       ,'\App\Http\Controllers\IconoController@getIconoId');
+Route::post('createIcono'          ,'\App\Http\Controllers\IconoController@createIcono');
+Route::put('updateIcono/{id}'      ,'\App\Http\Controllers\IconoController@updateIcono');
+Route::delete('deleteIconoId/{id}' ,'\App\Http\Controllers\IconoController@deleteIconoId');
+Route::get('getIconosActivas'      ,'\App\Http\Controllers\IconoController@getIconosActivas');
+
+/**
+ * Api de Items
+ */
+Route::get('getItems'             ,'\App\Http\Controllers\ItemController@getItem');
+Route::get('getItemId/{id}'       ,'\App\Http\Controllers\ItemController@getItemId');
+Route::post('createItem'          ,'\App\Http\Controllers\ItemController@createItem');
+Route::put('updateItem/{id}'      ,'\App\Http\Controllers\ItemController@updateItem');
+Route::delete('deleteItemId/{id}' ,'\App\Http\Controllers\ItemController@deleteItemId');
+Route::get('getItemsActivas'      ,'\App\Http\Controllers\ItemController@getItemsActivas');
+Route::get('getItemsRol/{id}'     ,'\App\Http\Controllers\ItemController@getItemsRol');
+

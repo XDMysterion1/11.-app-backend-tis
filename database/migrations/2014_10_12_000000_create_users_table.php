@@ -137,6 +137,29 @@ class CreateUsersTable extends Migration
         'estado'   =>'Activo',
         'rol'      =>'rol-1as21sdfg'
         ));
+
+        DB::table('users')->
+        insert(array(
+        'id'       =>'user-ky21qd29',
+        'nombre'   =>'Jorge',
+        'apellido' =>'Perez',
+        'email'    =>'pepe@gmail.com',
+        'password' =>'jorge123',
+        'estado'   =>'Activo',
+        'rol'      =>'rol-1as21sdfg'
+        ));
+
+        DB::table('users')->
+        insert(array(
+        'id'       =>'user-ky22l535',
+        'nombre'   =>'Corina',
+        'apellido' =>'Flores Villarroel',
+        'email'    =>'corinaflores.v@fcyt.umss.edu.bo',
+        'password' =>'corina123',
+        'estado'   =>'Activo',
+        'rol'      =>'rol-1as21sdfg'
+        ));
+
     }
 
     /**

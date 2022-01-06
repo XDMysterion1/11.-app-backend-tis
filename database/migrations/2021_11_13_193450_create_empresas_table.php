@@ -99,6 +99,21 @@ class CreateEmpresasTable extends Migration
         'estado'        =>'Activo',
         'user'          =>'user-kvq1z5do'
         ));
+
+        DB::table('empresas')->
+        insert(array(
+        'id'            =>'empresa-ky21kz9v',
+        'nombre'        =>'Lulu Belen',
+        'nombreCorto'   =>'ASUS',
+        'nombreLargo'   =>'ASUS QUALITY',
+        'tipoSociedad'  =>'S.R.L.',
+        'direccion'     =>'aV. AMERICA',
+        'email'         =>'asus@gmail.com',
+        'password'      =>'asus123',
+        'informacion'   =>'Asus es una empresa dedicada a ....',
+        'estado'        =>'Activo',
+        'user'          =>'user-ky21qd29'
+        ));
     }
 
     /**

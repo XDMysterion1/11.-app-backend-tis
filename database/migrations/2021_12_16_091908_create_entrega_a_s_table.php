@@ -24,6 +24,26 @@ class CreateEntregaASTable extends Migration
             $table->string('user'); 
             $table->foreign('user')->references('id')->on('users')->nullable()->onDelete('SET NULL');
         });
+
+        DB::table('entrega_a_s')->
+        insert(array(
+        'id'           =>'parteA-kxam8oav',
+        'link'         =>'https://www.google.com/',
+        'fechaInicio'  =>'martes, 21 de diciembre de 2021',
+        'fechaCierre'  =>'miércoles, 22 de diciembre de 2021',
+        'estado'       =>'Activo',
+        'user'         =>'user-kvhf2g4y'
+        ));
+
+        DB::table('entrega_a_s')->
+        insert(array(
+        'id'           =>'parteA-kxjpleyb',
+        'link'         =>'https://www.google.com/',
+        'fechaInicio'  =>'viernes, 31 de diciembre de 2021',
+        'fechaCierre'  =>'sábado, 11 de diciembre de 2021',
+        'estado'       =>'Activo',
+        'user'         =>'user-kvhf2g4y'
+        ));
     }
 
     /**
