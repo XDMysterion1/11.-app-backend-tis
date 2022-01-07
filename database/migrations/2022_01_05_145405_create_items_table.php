@@ -106,8 +106,9 @@ class CreateItemsTable extends Migration
             $table->string('listPliegoItemIcono');
             $table->string('listPliegoItemTo');
 
-            $table->string('foroIcono');
+
             $table->string('forolabel');
+            $table->string('foroIcono');
             $table->string('foroItemLabel');
             $table->string('foroItemIcono');
             $table->string('foroItemTo');
@@ -214,8 +215,8 @@ class CreateItemsTable extends Migration
         'listPliegoItemIcono'   =>'pi pi-fw pi-check-square',
         'listPliegoItemTo'      =>'/ListPliego',
 
-        'foroIcono'             =>'FORO DE DISCUSION',
-        'forolabel'             =>'pi pi-fw pi-sitemap',
+        'forolabel'             =>'FORO DE DISCUSION ',
+        'foroIcono'             =>'pi pi-fw pi-sitemap',
         'foroItemLabel'         =>'Foro',
         'foroItemIcono'         =>'pi pi-fw pi-users',
         'foroItemTo'            =>'/Forum',
@@ -321,8 +322,8 @@ class CreateItemsTable extends Migration
         'listPliegoItemIcono'   =>'pi pi-fw pi-check-square',
         'listPliegoItemTo'      =>'/ListPliego',
 
-        'foroIcono'             =>'',
         'forolabel'             =>'',
+        'foroIcono'             =>'',
         'foroItemLabel'         =>'',
         'foroItemIcono'         =>'',
         'foroItemTo'            =>'',
@@ -426,8 +427,8 @@ class CreateItemsTable extends Migration
         'listPliegoItemIcono'   =>'pi pi-fw pi-check-square',
         'listPliegoItemTo'      =>'/ListPliego',
 
-        'foroIcono'             =>'',
         'forolabel'             =>'',
+        'foroIcono'             =>'',
         'foroItemLabel'         =>'',
         'foroItemIcono'         =>'',
         'foroItemTo'            =>'',
@@ -532,8 +533,8 @@ class CreateItemsTable extends Migration
         'listPliegoItemIcono'   =>'pi pi-fw pi-check-square',
         'listPliegoItemTo'      =>'/ListPliego',
 
-        'foroIcono'             =>'',
         'forolabel'             =>'',
+        'foroIcono'             =>'',
         'foroItemLabel'         =>'',
         'foroItemIcono'         =>'',
         'foroItemTo'            =>'',
@@ -638,8 +639,8 @@ class CreateItemsTable extends Migration
         'listPliegoItemIcono'   =>'pi pi-fw pi-check-square',
         'listPliegoItemTo'      =>'/ListPliego',
 
-        'foroIcono'             =>'',
         'forolabel'             =>'',
+        'foroIcono'             =>'',
         'foroItemLabel'         =>'',
         'foroItemIcono'         =>'',
         'foroItemTo'            =>'',
