@@ -35,7 +35,7 @@ class CreateConvocatoriasTable extends Migration
         'link'     =>'https://docs.google.com/document/d/1QKxn8wD9fUICAttp7Sc378rM4VSqzIWUltd0PSToFBw/edit',
         'publicado'=>'No publicar',
         'estado'   =>'Activo',
-        'user'     =>'user-ky21qd29'
+        'user'     =>'user-xchf2g4y'
         ));
 
         DB::table('convocatorias')->
@@ -47,7 +47,7 @@ class CreateConvocatoriasTable extends Migration
         'link'     =>'https://drive.google.com/file/d/1SYMYNX-7WNjMwBNHIW_KRMqJks_Z1xcC/view?usp=sharing',
         'publicado'=>'No publicar',
         'estado'   =>'Activo',
-        'user'     =>'user-ky21qd29'
+        'user'     =>'user-xchf2g4y'
         ));
 
         DB::table('convocatorias')->
@@ -59,7 +59,7 @@ class CreateConvocatoriasTable extends Migration
         'link'     =>'https://drive.google.com/file/d/1SYMYNX-7WNjMwBNHIW_KRMqJks_Z1xcC/view?usp=sharing',
         'publicado'=>'No publicar',
         'estado'   =>'Activo',
-        'user'     =>'user-ky21qd29'
+        'user'     =>'user-xchf2g4y'
         ));
 
         DB::table('convocatorias')->
@@ -71,7 +71,7 @@ class CreateConvocatoriasTable extends Migration
         'link'     =>'https://drive.google.com/drive/u/0/folders/120iQOwmWHY6ClFl8dG8xcZeQ1h7Kar_c',
         'publicado'=>'No publicar',
         'estado'   =>'Activo',
-        'user'     =>'user-kwks5frw'
+        'user'     =>'user-xchf2g4y'
         ));
         DB::table('convocatorias')->
         insert(array(
@@ -82,7 +82,7 @@ class CreateConvocatoriasTable extends Migration
         'link'     =>'https://docs.google.com/document/d/1p2qlQefERvPSnB6qBnr8lTxoUDzvknMqi_OmiYOG3Tg/edit#',
         'publicado'=>'No publicar',
         'estado'   =>'Activo',
-        'user'     =>'user-kwks5frw'
+        'user'     =>'user-xchf2g4y'
         ));
     }
 

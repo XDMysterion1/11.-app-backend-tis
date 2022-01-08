@@ -113,6 +113,22 @@ class CreateItemsTable extends Migration
             $table->string('foroItemIcono');
             $table->string('foroItemTo');
             
+            $table->string('home');
+            $table->string('role');
+            $table->string('item');
+            $table->string('user');
+            $table->string('empresa');
+            $table->string('convocatoria');
+            $table->string('pliego');
+            $table->string('contrato');
+            $table->string('orden');
+            $table->string('plan');
+            $table->string('parteA');
+            $table->string('parteB');
+            $table->string('listEmpresa');
+            $table->string('listConv');
+            $table->string('listPliego');
+            $table->string('foro');
 
             $table->string('estado');
             $table->timestamps();
@@ -221,11 +237,30 @@ class CreateItemsTable extends Migration
         'foroItemIcono'         =>'pi pi-fw pi-users',
         'foroItemTo'            =>'/Forum',
 
+        'home'                  => 'Activo',
+        'role'                  => 'Activo',
+        'item'                  => 'Activo',
+        'user'                  => 'Activo',
+        'empresa'               => 'Activo',
+        'convocatoria'          => 'Activo',
+        'pliego'                => 'Activo',
+        'contrato'              => 'Activo',
+        'orden'                 => 'Activo',
+        'plan'                  => 'Activo',
+        'parteA'                => 'Activo',
+        'parteB'                => 'Activo',
+        'listEmpresa'           => 'Activo',
+        'listConv'              => 'Activo',
+        'listPliego'            => 'Activo',
+        'foro'                  => 'Activo',
+
         'estado'                =>'Activo',
         'rol'                   =>'rol-1as21sdfg'
 
         ));
 
+
+        
         //------------------Usuario------------------------------------------------
 
         DB::table('items')->
@@ -237,72 +272,72 @@ class CreateItemsTable extends Migration
         'homeItemIcono'         =>'pi pi-fw pi-home',
         'homeItemTo'            =>'/',
 
-        'rolelabel'             =>'',
-        'roleIcono'             =>'',
-        'roleItemLabel'         =>'',
-        'roleItemIcono'         =>'',
-        'roleItemTo'            =>'',
+        'rolelabel'             =>'*',
+        'roleIcono'             =>'*',
+        'roleItemLabel'         =>'*',
+        'roleItemIcono'         =>'*',
+        'roleItemTo'            =>'*',
 
-        'itemlabel'             =>'',
-        'itemIcono'             =>'',
-        'itemItemLabel'         =>'',
-        'itemItemIcono'         =>'',
-        'itemItemTo'            =>'',
+        'itemlabel'             =>'*',
+        'itemIcono'             =>'*',
+        'itemItemLabel'         =>'*',
+        'itemItemIcono'         =>'*',
+        'itemItemTo'            =>'*',
 
 
-        'userlabel'             =>'',
-        'userIcono'             =>'',
-        'userItemLabel'         =>'',
-        'userItemIcono'         =>'',
-        'userItemTo'            =>'',
+        'userlabel'             =>'*',
+        'userIcono'             =>'*',
+        'userItemLabel'         =>'*',
+        'userItemIcono'         =>'*',
+        'userItemTo'            =>'*',
 
-        'empresalabel'          =>'',
-        'empresaIcono'          =>'',
-        'empresaItemLabel'      =>'',
-        'empresaItemIcono'      =>'',
-        'empresaItemTo'         =>'',
+        'empresalabel'          =>'*',
+        'empresaIcono'          =>'*',
+        'empresaItemLabel'      =>'*',
+        'empresaItemIcono'      =>'*',
+        'empresaItemTo'         =>'*',
 
-        'convocatorialabel'     =>'',
-        'convocatoriaIcono'     =>'',
-        'convocatoriaItemLabel' =>'',
-        'convocatoriaItemIcono' =>'',
-        'convocatoriaItemTo'    =>'',
+        'convocatorialabel'     =>'*',
+        'convocatoriaIcono'     =>'*',
+        'convocatoriaItemLabel' =>'*',
+        'convocatoriaItemIcono' =>'*',
+        'convocatoriaItemTo'    =>'*',
 
-        'pliegolabel'           =>'',
-        'pliegoIcono'           =>'',
-        'pliegoItemLabel'       =>'',
-        'pliegoItemIcono'       =>'',
-        'pliegoItemTo'          =>'',
+        'pliegolabel'           =>'*',
+        'pliegoIcono'           =>'*',
+        'pliegoItemLabel'       =>'*',
+        'pliegoItemIcono'       =>'*',
+        'pliegoItemTo'          =>'*',
 
-        'contratolabel'         =>'',
-        'contratoIcono'         =>'',
-        'contratoItemLabel'     =>'',
-        'contratoItemIcono'     =>'',
-        'contratoItemTo'        =>'',
+        'contratolabel'         =>'*',
+        'contratoIcono'         =>'*',
+        'contratoItemLabel'     =>'*',
+        'contratoItemIcono'     =>'*',
+        'contratoItemTo'        =>'*',
 
-        'ordenlabel'            =>'',
-        'ordenIcono'            =>'',
-        'ordenItemLabel'        =>'',
-        'ordenItemIcono'        =>'',
-        'ordenItemTo'           =>'',
+        'ordenlabel'            =>'*',
+        'ordenIcono'            =>'*',
+        'ordenItemLabel'        =>'*',
+        'ordenItemIcono'        =>'*',
+        'ordenItemTo'           =>'*',
 
-        'planlabel'             =>'',
-        'planIcono'             =>'',
-        'planItemLabel'         =>'',
-        'planItemIcono'         =>'',
-        'planItemTo'            =>'',
+        'planlabel'             =>'*',
+        'planIcono'             =>'*',
+        'planItemLabel'         =>'*',
+        'planItemIcono'         =>'*',
+        'planItemTo'            =>'*',
 
-        'parteAlabel'           =>'',
-        'parteAIcono'           =>'',
-        'parteAItemLabel'       =>'',
-        'parteAItemIcono'       =>'',
-        'parteAItemTo'          =>'',
+        'parteAlabel'           =>'*',
+        'parteAIcono'           =>'*',
+        'parteAItemLabel'       =>'*',
+        'parteAItemIcono'       =>'*',
+        'parteAItemTo'          =>'*',
 
-        'parteBlabel'           =>'',
-        'parteBIcono'           =>'',
-        'parteBItemLabel'       =>'',
-        'parteBItemIcono'       =>'',
-        'parteBItemTo'          =>'',
+        'parteBlabel'           =>'*',
+        'parteBIcono'           =>'*',
+        'parteBItemLabel'       =>'*',
+        'parteBItemIcono'       =>'*',
+        'parteBItemTo'          =>'*',
 
         'listEmpresalabel'      =>'Lista de empresas',
         'listEmpresaIcono'      =>'i pi-fw pi-briefcase',
@@ -322,37 +357,178 @@ class CreateItemsTable extends Migration
         'listPliegoItemIcono'   =>'pi pi-fw pi-check-square',
         'listPliegoItemTo'      =>'/ListPliego',
 
-        'forolabel'             =>'',
-        'foroIcono'             =>'',
-        'foroItemLabel'         =>'',
-        'foroItemIcono'         =>'',
-        'foroItemTo'            =>'',
+        'forolabel'             =>'*',
+        'foroIcono'             =>'*',
+        'foroItemLabel'         =>'*',
+        'foroItemIcono'         =>'*',
+        'foroItemTo'            =>'*',
+
+        'home'                  => 'Activo',
+        'role'                  => 'Desactivado',
+        'item'                  => 'Desactivado',
+        'user'                  => 'Desactivado',
+        'empresa'               => 'Desactivado',
+        'convocatoria'          => 'Desactivado',
+        'pliego'                => 'Desactivado',
+        'contrato'              => 'Desactivado',
+        'orden'                 => 'Desactivado',
+        'plan'                  => 'Desactivado',
+        'parteA'                => 'Desactivado',
+        'parteB'                => 'Desactivado',
+        'listEmpresa'           => 'Activo',
+        'listConv'              => 'Activo',
+        'listPliego'            => 'Activo',
+        'foro'                  => 'Desactivado',
 
         'estado'                =>'Activo',
         'rol'                   =>'rol-kvjva7f6'
 
         ));
 
+         //--------- Estudiante---------------------
+         DB::table('items')->
+         insert(array(
+         'id'                    =>'items-oisd2g4y',
+         'homelabel'             =>'Home',
+         'homeIcono'             =>'pi pi-fw pi-home',
+         'homeItemLabel'         =>'Tablero',
+         'homeItemIcono'         =>'pi pi-fw pi-home',
+         'homeItemTo'            =>'/',
+ 
+         'rolelabel'             =>'*',
+         'roleIcono'             =>'*',
+         'roleItemLabel'         =>'*',
+         'roleItemIcono'         =>'*',
+         'roleItemTo'            =>'*',
+ 
+         'itemlabel'             =>'*',
+         'itemIcono'             =>'*',
+         'itemItemLabel'         =>'*',
+         'itemItemIcono'         =>'*',
+         'itemItemTo'            =>'*',
+ 
+ 
+         'userlabel'             =>'*',
+         'userIcono'             =>'*',
+         'userItemLabel'         =>'*',
+         'userItemIcono'         =>'*',
+         'userItemTo'            =>'*',
+ 
+         'empresalabel'          =>'*',
+         'empresaIcono'          =>'*',
+         'empresaItemLabel'      =>'*',
+         'empresaItemIcono'      =>'*',
+         'empresaItemTo'         =>'*',
+ 
+         'convocatorialabel'     =>'*',
+         'convocatoriaIcono'     =>'*',
+         'convocatoriaItemLabel' =>'*',
+         'convocatoriaItemIcono' =>'*',
+         'convocatoriaItemTo'    =>'*',
+ 
+         'pliegolabel'           =>'*',
+         'pliegoIcono'           =>'*',
+         'pliegoItemLabel'       =>'*',
+         'pliegoItemIcono'       =>'*',
+         'pliegoItemTo'          =>'*',
+ 
+         'contratolabel'         =>'*',
+         'contratoIcono'         =>'*',
+         'contratoItemLabel'     =>'*',
+         'contratoItemIcono'     =>'*',
+         'contratoItemTo'        =>'*',
+ 
+         'ordenlabel'            =>'*',
+         'ordenIcono'            =>'*',
+         'ordenItemLabel'        =>'*',
+         'ordenItemIcono'        =>'*',
+         'ordenItemTo'           =>'*',
+ 
+         'planlabel'             =>'Gestion de Plan de Pagos',
+         'planIcono'             =>'pi pi-fw pi-sitemap',
+         'planItemLabel'         =>'Plan de pagos',
+         'planItemIcono'         =>'pi pi-fw pi-id-card',
+         'planItemTo'            =>'/Plan',
+ 
+         'parteAlabel'           =>'Gestion de Entrega Parte A',
+         'parteAIcono'           =>'pi pi-fw pi-sitemap',
+         'parteAItemLabel'       =>'Parte A',
+         'parteAItemIcono'       =>'pi pi-fw pi-id-card',
+         'parteAItemTo'          =>'/ParteA',
+ 
+         'parteBlabel'           =>'Gestion de Entrega Parte B',
+         'parteBIcono'           =>'pi pi-fw pi-sitemap',
+         'parteBItemLabel'       =>'Parte B',
+         'parteBItemIcono'       =>'pi pi-fw pi-id-card',
+         'parteBItemTo'          =>'/ParteB',
+ 
+         'listEmpresalabel'      =>'Lista de empresas',
+         'listEmpresaIcono'      =>'i pi-fw pi-briefcase',
+         'listEmpresaItemLabel'  =>'Empresas',
+         'listEmpresaItemIcono'  =>'pi pi-fw pi-briefcase',
+         'listEmpresaItemTo'     =>'/ListEmpresa',
+ 
+         'listConvlabel'         =>'Lista de Publicaciones Convocatorias',
+         'listConvIcono'         =>'pi pi-fw pi-sitemap',
+         'listConvItemLabel'     =>'Convocatoria',
+         'listConvItemIcono'     =>'pi pi-fw pi-id-card',
+         'listConvItemTo'        =>'/ListConvocatoria',
+ 
+         'listPliegolabel'       =>'Lista de Publicaciones Pliego de Especificaciones',
+         'listPliegoIcono'       =>'pi pi-fw pi-sitemap',
+         'listPliegoItemLabel'   =>'Pliego de Especificaciones',
+         'listPliegoItemIcono'   =>'pi pi-fw pi-check-square',
+         'listPliegoItemTo'      =>'/ListPliego',
+ 
+         'forolabel'             =>'*',
+         'foroIcono'             =>'*',
+         'foroItemLabel'         =>'*',
+         'foroItemIcono'         =>'*',
+         'foroItemTo'            =>'*',
+
+         'home'                  => 'Activo',
+         'role'                  => 'Desactivado',
+         'item'                  => 'Desactivado',
+         'user'                  => 'Desactivado',
+         'empresa'               => 'Desactivado',
+         'convocatoria'          => 'Desactivado',
+         'pliego'                => 'Desactivado',
+         'contrato'              => 'Desactivado',
+         'orden'                 => 'Desactivado',
+         'plan'                  => 'Activo',
+         'parteA'                => 'Activo',
+         'parteB'                => 'Activo',
+         'listEmpresa'           => 'Activo',
+         'listConv'              => 'Activo',
+         'listPliego'            => 'Activo',
+         'foro'                  => 'Desactivado',
+ 
+         'estado'                =>'Activo',
+         'rol'                   =>'rol-ky3hq0kb'
+ 
+         ));
+
+        // -----------Docente---------------------------
         DB::table('items')->
         insert(array(
-        'id'                    =>'items-gxhf2g4y',
+        'id'                    =>'items-kxhg2g4y',
         'homelabel'             =>'Home',
         'homeIcono'             =>'pi pi-fw pi-home',
         'homeItemLabel'         =>'Tablero',
         'homeItemIcono'         =>'pi pi-fw pi-home',
         'homeItemTo'            =>'/',
 
-        'rolelabel'             =>'',
-        'roleIcono'             =>'',
-        'roleItemLabel'         =>'',
-        'roleItemIcono'         =>'',
-        'roleItemTo'            =>'',
+        'rolelabel'             =>'*',
+        'roleIcono'             =>'*',
+        'roleItemLabel'         =>'*',
+        'roleItemIcono'         =>'*',
+        'roleItemTo'            =>'*',
 
-        'itemlabel'             =>'',
-        'itemIcono'             =>'',
-        'itemItemLabel'         =>'',
-        'itemItemIcono'         =>'',
-        'itemItemTo'            =>'',
+        'itemlabel'             =>'*',
+        'itemIcono'             =>'*',
+        'itemItemLabel'         =>'*',
+        'itemItemIcono'         =>'*',
+        'itemItemTo'            =>'*',
 
 
         'userlabel'             =>'Gestion de Usuario',
@@ -427,228 +603,158 @@ class CreateItemsTable extends Migration
         'listPliegoItemIcono'   =>'pi pi-fw pi-check-square',
         'listPliegoItemTo'      =>'/ListPliego',
 
-        'forolabel'             =>'',
-        'foroIcono'             =>'',
-        'foroItemLabel'         =>'',
-        'foroItemIcono'         =>'',
-        'foroItemTo'            =>'',
+        'forolabel'             =>'*',
+        'foroIcono'             =>'*',
+        'foroItemLabel'         =>'*',
+        'foroItemIcono'         =>'*',
+        'foroItemTo'            =>'*',
+
+        'home'                  => 'Activo',
+        'role'                  => 'Desactivado',
+        'item'                  => 'Desactivado',
+        'user'                  => 'Activo',
+        'empresa'               => 'Activo',
+        'convocatoria'          => 'Activo',
+        'pliego'                => 'Activo',
+        'contrato'              => 'Activo',
+        'orden'                 => 'Activo',
+        'plan'                  => 'Activo',
+        'parteA'                => 'Activo',
+        'parteB'                => 'Activo',
+        'listEmpresa'           => 'Activo',
+        'listConv'              => 'Activo',
+        'listPliego'            => 'Activo',
+        'foro'                  => 'Desactivado',
 
         'estado'                =>'Activo',
         'rol'                   =>'rol-21sd3dgrf'
 
         ));
 
-        // -----------Docente---------------------------
+    
+        //------------------------------------No Usuario-----------------------------
+        
         DB::table('items')->
         insert(array(
-        'id'                    =>'items-kxhg2g4y',
+        'id'                    =>'items-gxhf2g4y',
         'homelabel'             =>'Home',
         'homeIcono'             =>'pi pi-fw pi-home',
         'homeItemLabel'         =>'Tablero',
         'homeItemIcono'         =>'pi pi-fw pi-home',
         'homeItemTo'            =>'/',
 
-        'rolelabel'             =>'',
-        'roleIcono'             =>'',
-        'roleItemLabel'         =>'',
-        'roleItemIcono'         =>'',
-        'roleItemTo'            =>'',
+        'rolelabel'             =>'*',
+        'roleIcono'             =>'*',
+        'roleItemLabel'         =>'*',
+        'roleItemIcono'         =>'*',
+        'roleItemTo'            =>'*',
 
-        'itemlabel'             =>'',
-        'itemIcono'             =>'',
-        'itemItemLabel'         =>'',
-        'itemItemIcono'         =>'',
-        'itemItemTo'            =>'',
+        'itemlabel'             =>'*',
+        'itemIcono'             =>'*',
+        'itemItemLabel'         =>'*',
+        'itemItemIcono'         =>'*',
+        'itemItemTo'            =>'*',
 
+        'userlabel'             =>'*',
+        'userIcono'             =>'*',
+        'userItemLabel'         =>'*',
+        'userItemIcono'         =>'*',
+        'userItemTo'            =>'*',
 
-        'userlabel'             =>'',
-        'userIcono'             =>'',
-        'userItemLabel'         =>'',
-        'userItemIcono'         =>'',
-        'userItemTo'            =>'',
+        'empresalabel'          =>'*',
+        'empresaIcono'          =>'*',
+        'empresaItemLabel'      =>'*',
+        'empresaItemIcono'      =>'*',
+        'empresaItemTo'         =>'*',
 
-        'empresalabel'          =>'',
-        'empresaIcono'          =>'',
-        'empresaItemLabel'      =>'',
-        'empresaItemIcono'      =>'',
-        'empresaItemTo'         =>'',
+        'convocatorialabel'     =>'*',
+        'convocatoriaIcono'     =>'*',
+        'convocatoriaItemLabel' =>'*',
+        'convocatoriaItemIcono' =>'*',
+        'convocatoriaItemTo'    =>'*',
 
-        'convocatorialabel'     =>'Gestion Publicacion Convocatoria',
-        'convocatoriaIcono'     =>'pi pi-fw pi-sitemap',
-        'convocatoriaItemLabel' =>'Convocatoria',
-        'convocatoriaItemIcono' =>'pi pi-fw pi-id-card',
-        'convocatoriaItemTo'    =>'/Convocatoria',
+        'pliegolabel'           =>'*',
+        'pliegoIcono'           =>'*',
+        'pliegoItemLabel'       =>'*',
+        'pliegoItemIcono'       =>'*',
+        'pliegoItemTo'          =>'*',
 
-        'pliegolabel'           =>'Gestion Publicacion Pliego de Especificaciones',
-        'pliegoIcono'           =>'pi pi-fw pi-sitemap',
-        'pliegoItemLabel'       =>'Pliego de Especificaciones',
-        'pliegoItemIcono'       =>'pi pi-fw pi-check-square',
-        'pliegoItemTo'          =>'/PliegoEspecificacion',
+        'contratolabel'         =>'*',
+        'contratoIcono'         =>'*',
+        'contratoItemLabel'     =>'*',
+        'contratoItemIcono'     =>'*',
+        'contratoItemTo'        =>'*',
 
-        'contratolabel'         =>'Gestion de Firma de Contrato',
-        'contratoIcono'         =>'pi pi-fw pi-sitemap',
-        'contratoItemLabel'     =>'Firma de contrato',
-        'contratoItemIcono'     =>'pi pi-fw pi-id-card',
-        'contratoItemTo'        =>'/Contrato',
+        'ordenlabel'            =>'*',
+        'ordenIcono'            =>'*',
+        'ordenItemLabel'        =>'*',
+        'ordenItemIcono'        =>'*',
+        'ordenItemTo'           =>'*',
 
-        'ordenlabel'            =>'Gestion de Orden de Cambio',
-        'ordenIcono'            =>'pi pi-fw pi-sitemap',
-        'ordenItemLabel'        =>'Orden de cambio',
-        'ordenItemIcono'        =>'pi pi-fw pi-id-card',
-        'ordenItemTo'           =>'/Orden',
+        'planlabel'             =>'*',
+        'planIcono'             =>'*',
+        'planItemLabel'         =>'*',
+        'planItemIcono'         =>'*',
+        'planItemTo'            =>'*',
 
-        'planlabel'             =>'Gestion de Plan de Pagos',
-        'planIcono'             =>'pi pi-fw pi-sitemap',
-        'planItemLabel'         =>'Plan de pagos',
-        'planItemIcono'         =>'pi pi-fw pi-id-card',
-        'planItemTo'            =>'/Plan',
+        'parteAlabel'           =>'*',
+        'parteAIcono'           =>'*',
+        'parteAItemLabel'       =>'*',
+        'parteAItemIcono'       =>'*',
+        'parteAItemTo'          =>'*',
 
-        'parteAlabel'           =>'Gestion de Entrega Parte A',
-        'parteAIcono'           =>'pi pi-fw pi-sitemap',
-        'parteAItemLabel'       =>'Parte A',
-        'parteAItemIcono'       =>'pi pi-fw pi-id-card',
-        'parteAItemTo'          =>'/ParteA',
+        'parteBlabel'           =>'*',
+        'parteBIcono'           =>'*',
+        'parteBItemLabel'       =>'*',
+        'parteBItemIcono'       =>'*',
+        'parteBItemTo'          =>'*',
 
-        'parteBlabel'           =>'Gestion de Entrega Parte B',
-        'parteBIcono'           =>'pi pi-fw pi-sitemap',
-        'parteBItemLabel'       =>'Parte B',
-        'parteBItemIcono'       =>'pi pi-fw pi-id-card',
-        'parteBItemTo'          =>'/ParteB',
+        'listEmpresalabel'      =>'*',
+        'listEmpresaIcono'      =>'*',
+        'listEmpresaItemLabel'  =>'*',
+        'listEmpresaItemIcono'  =>'*',
+        'listEmpresaItemTo'     =>'*',
 
-        'listEmpresalabel'      =>'Lista de empresas',
-        'listEmpresaIcono'      =>'i pi-fw pi-briefcase',
-        'listEmpresaItemLabel'  =>'Empresas',
-        'listEmpresaItemIcono'  =>'pi pi-fw pi-briefcase',
-        'listEmpresaItemTo'     =>'/ListEmpresa',
+        'listConvlabel'         =>'*',
+        'listConvIcono'         =>'*',
+        'listConvItemLabel'     =>'*',
+        'listConvItemIcono'     =>'*',
+        'listConvItemTo'        =>'*',
 
-        'listConvlabel'         =>'Lista de Publicaciones Convocatorias',
-        'listConvIcono'         =>'pi pi-fw pi-sitemap',
-        'listConvItemLabel'     =>'Convocatoria',
-        'listConvItemIcono'     =>'pi pi-fw pi-id-card',
-        'listConvItemTo'        =>'/ListConvocatoria',
+        'listPliegolabel'       =>'*',
+        'listPliegoIcono'       =>'*',
+        'listPliegoItemLabel'   =>'*',
+        'listPliegoItemIcono'   =>'*',
+        'listPliegoItemTo'      =>'*',
 
-        'listPliegolabel'       =>'Lista de Publicaciones Pliego de Especificaciones',
-        'listPliegoIcono'       =>'pi pi-fw pi-sitemap',
-        'listPliegoItemLabel'   =>'Pliego de Especificaciones',
-        'listPliegoItemIcono'   =>'pi pi-fw pi-check-square',
-        'listPliegoItemTo'      =>'/ListPliego',
+        'forolabel'             =>'*',
+        'foroIcono'             =>'*',
+        'foroItemLabel'         =>'*',
+        'foroItemIcono'         =>'*',
+        'foroItemTo'            =>'*',
 
-        'forolabel'             =>'',
-        'foroIcono'             =>'',
-        'foroItemLabel'         =>'',
-        'foroItemIcono'         =>'',
-        'foroItemTo'            =>'',
+        'home'                  => 'Activo',
+        'role'                  => 'Desactivado',
+        'item'                  => 'Desactivado',
+        'user'                  => 'Desactivado',
+        'empresa'               => 'Desactivado',
+        'convocatoria'          => 'Desactivado',
+        'pliego'                => 'Desactivado',
+        'contrato'              => 'Desactivado',
+        'orden'                 => 'Desactivado',
+        'plan'                  => 'Desactivado',
+        'parteA'                => 'Desactivado',
+        'parteB'                => 'Desactivado',
+        'listEmpresa'           => 'Desactivado',
+        'listConv'              => 'Desactivado',
+        'listPliego'            => 'Desactivado',
+        'foro'                  => 'Desactivado',
 
         'estado'                =>'Activo',
-        'rol'                   =>'rol-21sd3dgrf'
+        'rol'                   =>'rol-gt521sdfg'
 
         ));
 
-        //--------- Estudiante---------------------
-        DB::table('items')->
-        insert(array(
-        'id'                    =>'items-oisd2g4y',
-        'homelabel'             =>'Home',
-        'homeIcono'             =>'pi pi-fw pi-home',
-        'homeItemLabel'         =>'Tablero',
-        'homeItemIcono'         =>'pi pi-fw pi-home',
-        'homeItemTo'            =>'/',
-
-        'rolelabel'             =>'',
-        'roleIcono'             =>'',
-        'roleItemLabel'         =>'',
-        'roleItemIcono'         =>'',
-        'roleItemTo'            =>'',
-
-        'itemlabel'             =>'',
-        'itemIcono'             =>'',
-        'itemItemLabel'         =>'',
-        'itemItemIcono'         =>'',
-        'itemItemTo'            =>'',
-
-
-        'userlabel'             =>'',
-        'userIcono'             =>'',
-        'userItemLabel'         =>'',
-        'userItemIcono'         =>'',
-        'userItemTo'            =>'',
-
-        'empresalabel'          =>'Gestion de Empresa',
-        'empresaIcono'          =>'pi pi-fw pi-briefcase',
-        'empresaItemLabel'      =>'Empresas',
-        'empresaItemIcono'      =>'pi pi-fw pi-briefcase',
-        'empresaItemTo'         =>'/Empresa',
-
-        'convocatorialabel'     =>'Gestion Publicacion Convocatoria',
-        'convocatoriaIcono'     =>'pi pi-fw pi-sitemap',
-        'convocatoriaItemLabel' =>'Convocatoria',
-        'convocatoriaItemIcono' =>'pi pi-fw pi-id-card',
-        'convocatoriaItemTo'    =>'/Convocatoria',
-
-        'pliegolabel'           =>'Gestion Publicacion Pliego de Especificaciones',
-        'pliegoIcono'           =>'pi pi-fw pi-sitemap',
-        'pliegoItemLabel'       =>'Pliego de Especificaciones',
-        'pliegoItemIcono'       =>'pi pi-fw pi-check-square',
-        'pliegoItemTo'          =>'/PliegoEspecificacion',
-
-        'contratolabel'         =>'Gestion de Firma de Contrato',
-        'contratoIcono'         =>'pi pi-fw pi-sitemap',
-        'contratoItemLabel'     =>'Firma de contrato',
-        'contratoItemIcono'     =>'pi pi-fw pi-id-card',
-        'contratoItemTo'        =>'/Contrato',
-
-        'ordenlabel'            =>'Gestion de Orden de Cambio',
-        'ordenIcono'            =>'pi pi-fw pi-sitemap',
-        'ordenItemLabel'        =>'Orden de cambio',
-        'ordenItemIcono'        =>'pi pi-fw pi-id-card',
-        'ordenItemTo'           =>'/Orden',
-
-        'planlabel'             =>'Gestion de Plan de Pagos',
-        'planIcono'             =>'pi pi-fw pi-sitemap',
-        'planItemLabel'         =>'Plan de pagos',
-        'planItemIcono'         =>'pi pi-fw pi-id-card',
-        'planItemTo'            =>'/Plan',
-
-        'parteAlabel'           =>'Gestion de Entrega Parte A',
-        'parteAIcono'           =>'pi pi-fw pi-sitemap',
-        'parteAItemLabel'       =>'Parte A',
-        'parteAItemIcono'       =>'pi pi-fw pi-id-card',
-        'parteAItemTo'          =>'/ParteA',
-
-        'parteBlabel'           =>'Gestion de Entrega Parte B',
-        'parteBIcono'           =>'pi pi-fw pi-sitemap',
-        'parteBItemLabel'       =>'Parte B',
-        'parteBItemIcono'       =>'pi pi-fw pi-id-card',
-        'parteBItemTo'          =>'/ParteB',
-
-        'listEmpresalabel'      =>'Lista de empresas',
-        'listEmpresaIcono'      =>'i pi-fw pi-briefcase',
-        'listEmpresaItemLabel'  =>'Empresas',
-        'listEmpresaItemIcono'  =>'pi pi-fw pi-briefcase',
-        'listEmpresaItemTo'     =>'/ListEmpresa',
-
-        'listConvlabel'         =>'Lista de Publicaciones Convocatorias',
-        'listConvIcono'         =>'pi pi-fw pi-sitemap',
-        'listConvItemLabel'     =>'Convocatoria',
-        'listConvItemIcono'     =>'pi pi-fw pi-id-card',
-        'listConvItemTo'        =>'/ListConvocatoria',
-
-        'listPliegolabel'       =>'Lista de Publicaciones Pliego de Especificaciones',
-        'listPliegoIcono'       =>'pi pi-fw pi-sitemap',
-        'listPliegoItemLabel'   =>'Pliego de Especificaciones',
-        'listPliegoItemIcono'   =>'pi pi-fw pi-check-square',
-        'listPliegoItemTo'      =>'/ListPliego',
-
-        'forolabel'             =>'',
-        'foroIcono'             =>'',
-        'foroItemLabel'         =>'',
-        'foroItemIcono'         =>'',
-        'foroItemTo'            =>'',
-
-        'estado'                =>'Activo',
-        'rol'                   =>'rol-ky3hq0kb'
-
-        ));
 
        
 

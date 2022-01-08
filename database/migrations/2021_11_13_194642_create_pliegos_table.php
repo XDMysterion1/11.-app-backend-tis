@@ -35,7 +35,7 @@ class CreatePliegosTable extends Migration
         'link'     =>'https://docs.google.com/document/d/1QKxn8wD9fUICAttp7Sc378rM4VSqzIWUltd0PSToFBw/edit?usp=sharing',
         'publicado'=>'No publicar',
         'estado'   =>'Activo',
-        'user'     =>'user-kvigul61'
+        'user'     =>'user-xchf2g4y'
         ));
 
         DB::table('pliegos')->
@@ -47,7 +47,7 @@ class CreatePliegosTable extends Migration
         'link'     =>'https://drive.google.com/file/d/1cnVhsoZ9gAYX9INy0FSwN7g4oFyjIzYY/view?usp=sharing',
         'publicado'=>'Publicar',
         'estado'   =>'Activo',
-        'user'     =>'user-kvhf2g4y'
+        'user'     =>'user-xchf2g4y'
         ));
 
         DB::table('pliegos')->
@@ -59,7 +59,7 @@ class CreatePliegosTable extends Migration
         'link'     =>'https://drive.google.com/file/d/1cnVhsoZ9gAYX9INy0FSwN7g4oFyjIzYY/view?usp=sharing',
         'publicado'=>'Publicar',
         'estado'   =>'Activo',
-        'user'     =>'user-kvhf2g4y'
+        'user'     =>'user-xchf2g4y'
         ));
 
         DB::table('pliegos')->
@@ -71,7 +71,7 @@ class CreatePliegosTable extends Migration
         'link'     =>'https://drive.google.com/drive/u/0/folders/120iQOwmWHY6ClFl8dG8xcZeQ1h7Kar_c',
         'publicado'=>'Publicar',
         'estado'   =>'Activo',
-        'user'     =>'user-kvhf2g4y'
+        'user'     =>'user-xchf2g4y'
         ));
     }
 
