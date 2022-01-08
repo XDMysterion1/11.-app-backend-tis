@@ -5,12 +5,10 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Rol extends Model
+class EntregaA extends Model
 {
     use HasFactory;
-    public $timestamps = false;
     public $incrementing = false;
     protected $keyType = 'string';
-    protected $fillable = ['id','rol','estado'];
-    protected $hidden = ['created_at','updated_at'];
+    protected $fillable = ['id','link','fechaInicio','fechaCierre','estado','user'];
 }

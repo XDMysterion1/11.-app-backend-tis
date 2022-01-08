@@ -17,10 +17,12 @@ class User extends Authenticatable
      * @var array
      */
     public $timestamps = false;
+    public $incrementing = false;
+    protected $keyType = 'string';
     protected $fillable = [
-        'id','codigoSIS','nombre','apellido', 
-        'email', 'password','direccion','telefono',
-        'gestion','sexo','rol'
+        'id','nombre','apellido', 
+        'email', 'password','estado'
+        ,'rol'
     ];
 
 
