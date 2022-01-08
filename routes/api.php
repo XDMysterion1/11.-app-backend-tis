@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ArchivoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -40,3 +41,18 @@ Route::delete('deleteUserId/{id}' ,'\App\Http\Controllers\UserController@deleteU
  */
 Route::get('getGrupoEmpresa','\App\Http\Controllers\GrupoEmpresaController@getGrupoEmpresa');
 
+///plan
+Route::post("upload", [ArchivoController::class, 'upload']);
+Route::get("download", [ArchivoController::class, 'download']);
+//convocatoria
+Route::post("uploadConvocatoria", [ArchivoController::class, 'uploadConvocatoria']);
+Route::get("downloadConvocatoria", [ArchivoController::class, 'downloadConvocatoria']);
+//pliego
+Route::post("uploadPliego", [ArchivoController::class, 'uploadPliego']);
+Route::get("downloadPliego", [ArchivoController::class, 'downloadPliego']);
+//parte A
+Route::post("uploadParteA", [ArchivoController::class, 'uploadParteA']);
+Route::get("downloadParteA", [ArchivoController::class, 'downloadParteA']);
+//parte B
+Route::post("uploadParteB", [ArchivoController::class, 'uploadParteB']);
+Route::get("downloadParteB", [ArchivoController::class, 'downloadParteB']);
