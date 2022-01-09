@@ -110,7 +110,7 @@ class CreateOrdensTable extends Migration
         'estado'                  =>'Activo',
 
         'empresa'                 =>'empresa-kwa2640y',
-        'user'                    =>'user-ss12qswe'
+        'user'                    =>'user-xchf2g4y'
         ));
 
         DB::table('ordens')->
@@ -142,7 +142,7 @@ class CreateOrdensTable extends Migration
         'estado'                  =>'Activo',
 
         'empresa'                 =>'empresa-kwarin4p',
-        'user'                    =>'user-kvok0fcb'
+        'user'                    =>'user-xchf2g4y'
         ));
 
     }

@@ -35,7 +35,7 @@ class CreateContratosTable extends Migration
         'codigoPliego'        =>'PETIS-1309-2021',
         'estado'              =>'Activo',
         'empresa'             =>'empresa-kwa2640y',
-        'user'                =>'user-kvhf2g4y'
+        'user'                =>'user-xchf2g4y'
         ));
         DB::table('contratos')->
         insert(array(
@@ -45,7 +45,7 @@ class CreateContratosTable extends Migration
         'codigoPliego'        =>'PETIS-1409-2021',
         'estado'              =>'Activo',
         'empresa'             =>'empresa-ky21kz9v',
-        'user'                =>'user-kvhf2g4y'
+        'user'                =>'user-xchf2g4y'
         ));
     }
 

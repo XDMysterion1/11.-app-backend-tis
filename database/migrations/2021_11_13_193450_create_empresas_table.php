@@ -41,7 +41,7 @@ class CreateEmpresasTable extends Migration
         'password'      =>'123456',
         'informacion'   =>'Especialisados en software',
         'estado'        =>'Activo',
-        'user'          =>'user-ss12qswe'
+        'user'          =>'user-kvhf2g4y'
         ));
         DB::table('empresas')->
         insert(array(
@@ -55,7 +55,7 @@ class CreateEmpresasTable extends Migration
         'password'      =>'liontech12345',
         'informacion'   =>'Es una empresa encargada del desarrollo del software',
         'estado'        =>'Activo',
-        'user'          =>'user-kvhf2g4y'
+        'user'          =>'user-kvigul61'
         ));
         DB::table('empresas')->
         insert(array(
@@ -69,7 +69,7 @@ class CreateEmpresasTable extends Migration
         'password'      =>'123456',
         'informacion'   =>'Empresa de desarrollo de software',
         'estado'        =>'Activo',
-        'user'          =>'user-kvigul61'
+        'user'          =>'user-ss12qswe'
         ));
         DB::table('empresas')->
         insert(array(
@@ -83,7 +83,7 @@ class CreateEmpresasTable extends Migration
         'password'      =>'123123',
         'informacion'   =>'Ninguna',
         'estado'        =>'Activo',
-        'user'          =>'user-kvq1z5do'
+        'user'          =>'user-kvor9jr5'
         ));
         DB::table('empresas')->
         insert(array(
@@ -97,7 +97,7 @@ class CreateEmpresasTable extends Migration
         'password'      =>'...123',
         'informacion'   =>'empresa de software',
         'estado'        =>'Activo',
-        'user'          =>'user-kvq1z5do'
+        'user'          =>'user-kvok0fcb'
         ));
 
         DB::table('empresas')->
@@ -112,7 +112,7 @@ class CreateEmpresasTable extends Migration
         'password'      =>'asus123',
         'informacion'   =>'Asus es una empresa dedicada a ....',
         'estado'        =>'Activo',
-        'user'          =>'user-ky21qd29'
+        'user'          =>'user-kwwn9wse'
         ));
     }
 

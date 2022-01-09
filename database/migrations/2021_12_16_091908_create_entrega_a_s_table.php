@@ -32,7 +32,7 @@ class CreateEntregaASTable extends Migration
         'fechaInicio'  =>'martes, 21 de diciembre de 2021',
         'fechaCierre'  =>'miércoles, 22 de diciembre de 2021',
         'estado'       =>'Activo',
-        'user'         =>'user-kvhf2g4y'
+        'user'         =>'user-xchf2g4y'
         ));
 
         DB::table('entrega_a_s')->
@@ -42,7 +42,7 @@ class CreateEntregaASTable extends Migration
         'fechaInicio'  =>'viernes, 31 de diciembre de 2021',
         'fechaCierre'  =>'sábado, 11 de diciembre de 2021',
         'estado'       =>'Activo',
-        'user'         =>'user-kvhf2g4y'
+        'user'         =>'user-xchf2g4y'
         ));
     }
 
