@@ -24,6 +24,7 @@ class CreateRolsTable extends Migration
         DB::table('rols')->insert(array('id'=>'rol-ky3hq0kb' ,'rol'=>'Estudiante'              ,'estado'=>'Activo'));
         DB::table('rols')->insert(array('id'=>'rol-21sd3dgrf','rol'=>'Docente'                 ,'estado'=>'Activo'));
         DB::table('rols')->insert(array('id'=>'rol-gt521sdfg','rol'=>'NoUsuario'               ,'estado'=>'Activo'));
+        DB::table('rols')->insert(array('id'=>'rol-xd521sdfg','rol'=>'QA'                      ,'estado'=>'Activo'));
     }
 
     /**
